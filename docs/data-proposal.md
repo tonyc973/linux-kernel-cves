@@ -2,12 +2,6 @@
 
 ## 1. De ce acest dataset?
 
-Am pornit de la ideea unui dataset cu vulnerabilități de procesor: Spectre, Meltdown, Downfall, Zenbleed și altele de
-același fel. L-am colectat și filtrat și am rămas cu doar 389 de CVE-uri. Cam atât are NVD, iar pe un set atât de mic
-nu poți face o analiză statistică serioasă. Uitându-ne prin ele, am observat că o bună parte din CVE-urile „de CPU”
-erau de fapt fix-uri în kernelul Linux (gadget-uri Spectre, bariere lipsă, mitigări stricate). Așa am urcat un nivel,
-la kernel, unde situația arată cu totul altfel.
-
 Din februarie 2024, echipa kernelului își emite singură CVE-urile și dă un CVE aproape oricărui bug fixat care ar
 putea avea impact de securitate. În NVD există acum **21.808 CVE-uri care menționează kernelul Linux**, iar 18.047
 dintre ele sunt emise de kernel.org. Până în 2024 erau cel mult câteva sute pe an. În 2024 au fost 4.368, în 2025
@@ -115,8 +109,7 @@ de acord cu noi la fiecare câmp. Așa aflăm cât ne putem baza pe etichete. A 
 CVE-uri ca exploatate în practică (30 exploatate activ, 74 cu un proof of concept public). Dacă câmpurile noastre
 `attacker` și `impact` valorează ceva, o ordonare după ele ar trebui să aducă aceste 104 CVE-uri în top mult mai bine
 decât CVSS, care dă aproape tuturor 5.5 sau 7.8. Ca demonstrație, vom pune setul și în spatele unui mic agent care
-caută și răspunde la întrebări. Am construit deja unul pentru subsetul de CPU, cu un index FAISS și o buclă de tool
-calling.
+caută în el și răspunde la întrebări, cu un index FAISS și o buclă de tool calling.
 
 ## Eșantion
 
