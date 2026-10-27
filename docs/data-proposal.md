@@ -109,7 +109,7 @@ de acord cu noi la fiecare câmp. Așa aflăm cât ne putem baza pe etichete. A 
 CVE-uri ca exploatate în practică (30 exploatate activ, 74 cu un proof of concept public). Dacă câmpurile noastre
 `attacker` și `impact` valorează ceva, o ordonare după ele ar trebui să aducă aceste 104 CVE-uri în top mult mai bine
 decât CVSS, care dă aproape tuturor 5.5 sau 7.8. Ca demonstrație, vom pune setul și în spatele unui mic agent care
-caută în el și răspunde la întrebări, cu un index FAISS și o buclă de tool calling.
+caută în el și răspunde la întrebări, cu o buclă de tool calling.
 
 ## Eșantion
 
